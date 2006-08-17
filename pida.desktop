@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Pida
+Comment=Integrated Development Environment
+Exec=pida
+Icon=pida-icon.png
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=GTK;GNOME;Development;IDE;
+Encoding=UTF-8
+StartupNotify=true
