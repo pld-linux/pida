@@ -8,6 +8,8 @@ Group:		Development/Tools
 Source0:	http://download.berlios.de/pida/%{name}-%{version}.tar.gz
 # Source0-md5:	dca8a7d8b92ee7619992b26aa9dd6186
 URL:		http://pida.vm.bytemark.co.uk/projects/pida
+BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,8 +32,8 @@ systemów operacyjnych.
 Unikalne cechy:
 - osadzony Vim
 - przegl±darka plików uwzglêdniaj±ca informacje o stanie wersji dla
-  systemów kontroli wersji CVS, Subversion, Darcs, Monotone,
-  Mercurial, Bazaar-ng i Arch
+  systemów kontroli wersji CVS, Subversion, Darcs, Monotone, Mercurial,
+  Bazaar-ng i Arch
 - wbudowane ¶rodowisko szybkiego tworzenia aplikacji GTK+
 - wiele innych unikalnych i po¿±danych drobiazgów
 
