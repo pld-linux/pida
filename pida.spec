@@ -2,15 +2,17 @@ Summary:	A framework for integrated development
 Summary(pl):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.3.1
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://download.berlios.de/pida/%{name}-%{version}.tar.gz
 # Source0-md5:	dca8a7d8b92ee7619992b26aa9dd6186
+Source1:	%{name}.desktop
 URL:		http://pida.vm.bytemark.co.uk/projects/pida
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
+Requires:	python-gnome-desktop-gtksourceview
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,12 +47,16 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 python setup.py install \
 	--install-data=%{_datadir}/%{name} \
 	--single-version-externally-managed \
         --root=$RPM_BUILD_ROOT \
         --optimize=2
+
+mv $RPM_BUILD_ROOT%{_datadir}/%{name}/pida-icon.png $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -61,3 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/*
 %{_datadir}/%{name}
+%{_pixmapsdir}/*.png
+%{_desktopdir}/*.desktop
