@@ -8,7 +8,7 @@ Group:		Development/Tools
 Source0:	http://download.berlios.de/pida/%{name}-%{version}.tar.gz
 # Source0-md5:	dca8a7d8b92ee7619992b26aa9dd6186
 Source1:	%{name}.desktop
-URL:		http://pida.vm.bytemark.co.uk/projects/pida
+URL:		http://pida.berlios.de/
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
