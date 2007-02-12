@@ -1,5 +1,5 @@
 Summary:	A framework for integrated development
-Summary(pl):	Szkielet do programowania zintegrowanego
+Summary(pl.UTF-8):   Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.3.1
 Release:	0.2
@@ -27,17 +27,17 @@ Unique Features:
 - Built in GTK+ rapid application development
 - Many more unique and obsessive touches
 
-%description -l pl
-PIDA to zintegrowane 秗odowisko programistyczne (IDE) dla uniksowych
-system體 operacyjnych.
+%description -l pl.UTF-8
+PIDA to zintegrowane 艣rodowisko programistyczne (IDE) dla uniksowych
+system贸w operacyjnych.
 
 Unikalne cechy:
 - osadzony Vim
-- przegl眃arka plik體 uwzgl阣niaj眂a informacje o stanie wersji dla
-  system體 kontroli wersji CVS, Subversion, Darcs, Monotone, Mercurial,
+- przegl膮darka plik贸w uwzgl臋dniaj膮ca informacje o stanie wersji dla
+  system贸w kontroli wersji CVS, Subversion, Darcs, Monotone, Mercurial,
   Bazaar-ng i Arch
-- wbudowane 秗odowisko szybkiego tworzenia aplikacji GTK+
-- wiele innych unikalnych i po勘danych drobiazg體
+- wbudowane 艣rodowisko szybkiego tworzenia aplikacji GTK+
+- wiele innych unikalnych i po偶膮danych drobiazg贸w
 
 %prep
 %setup -q
