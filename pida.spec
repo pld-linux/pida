@@ -1,5 +1,5 @@
 Summary:	A framework for integrated development
-Summary(pl.UTF-8):   Szkielet do programowania zintegrowanego
+Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.3.1
 Release:	0.2
