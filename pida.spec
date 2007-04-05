@@ -1,18 +1,25 @@
+# TODO:
+# - investigate the documentation format in doc
+# - package only py[co] files
+# - verify if such a big version jump actually works
+#
 Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
-Version:	0.3.1
-Release:	0.2
+Version:	0.4.4
+Release:	0.1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://download.berlios.de/pida/%{name}-%{version}.tar.gz
-# Source0-md5:	dca8a7d8b92ee7619992b26aa9dd6186
+Source0:	http://pida.googlecode.com/files/%{name}-%{version}.tar.gz
+# Source0-md5:	462542ce70b47d16a019b403b741a411
 Source1:	%{name}.desktop
 URL:		http://pida.berlios.de/
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 Requires:	python-gnome-desktop-gtksourceview
+Requires:	python-vte
+Requires:	python-kiwi
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,7 +62,7 @@ python setup.py install \
         --root=$RPM_BUILD_ROOT \
         --optimize=2
 
-mv $RPM_BUILD_ROOT%{_datadir}/%{name}/pida-icon.png $RPM_BUILD_ROOT%{_pixmapsdir}
+cp $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/data/icons/pida-icon.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
@@ -63,9 +70,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc docs/html/* AUTHORS CHANGELOG README
+%doc AUTHORS CHANGELOG README
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/*
-%{_datadir}/%{name}
 %{_pixmapsdir}/*.png
 %{_desktopdir}/*.desktop
