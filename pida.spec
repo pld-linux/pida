@@ -17,6 +17,7 @@ Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://pida.berlios.de/
 BuildRequires:	python-devel
+BuildRequires:	python-pygtk-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 Requires:	python-gnome-desktop-gtksourceview
