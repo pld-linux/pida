@@ -21,6 +21,7 @@ BuildRequires:	python-pygtk-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 Requires:	python-gnome-desktop-gtksourceview
+Requires:	python-gnome-gconf
 Requires:	python-vte
 Requires:	python-kiwi
 BuildArch:	noarch
