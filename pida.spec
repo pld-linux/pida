@@ -9,7 +9,7 @@ Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.5.0
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
@@ -24,7 +24,6 @@ Requires:	python-gnome-desktop-gtksourceview
 Requires:	python-gnome-gconf
 Requires:	python-vte
 Requires:	python-kiwi
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
