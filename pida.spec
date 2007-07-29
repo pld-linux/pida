@@ -8,12 +8,12 @@
 Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
-Version:	0.5.0
-Release:	0.2
+Version:	0.5.1
+Release:	0.1
 License:	GPL
 Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
-# Source0-md5:	5f177b634eddc42133e59dbe21b16341
+# Source0-md5:	d24bbdc2c07172062cf55dffe58c85f6
 Source1:	%{name}.desktop
 URL:		http://pida.berlios.de/
 BuildRequires:	python-devel
@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS.txt README.txt
+%doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
 %{py_sitedir}/*
 %{_pixmapsdir}/*.png
