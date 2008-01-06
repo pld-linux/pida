@@ -10,7 +10,7 @@ Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.5.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
@@ -79,31 +79,31 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pida-remote
 
 # see todo at top of the spec
-%lang(fr) %{py_sitedir}/pida/resources/locale/fr_FR/LC_MESSAGES/pida.po
-%lang(fr) %{py_sitedir}/pida/services/appcontroller/locale/fr_FR/LC_MESSAGES/appcontroller.po
-%lang(fr) %{py_sitedir}/pida/services/buffer/locale/fr_FR/LC_MESSAGES/buffer.po
-%lang(fr) %{py_sitedir}/pida/services/bugreport/locale/fr_FR/LC_MESSAGES/bugreport.po
-%lang(fr) %{py_sitedir}/pida/services/commander/locale/fr_FR/LC_MESSAGES/commander.po
-%lang(fr) %{py_sitedir}/pida/services/editor/locale/fr_FR/LC_MESSAGES/editor.po
-%lang(fr) %{py_sitedir}/pida/services/filemanager/locale/fr_FR/LC_MESSAGES/filemanager.po
-%lang(fr) %{py_sitedir}/pida/services/grepper/locale/fr_FR/LC_MESSAGES/grepper.po
-%lang(fr) %{py_sitedir}/pida/services/help/locale/fr_FR/LC_MESSAGES/help.po
-%lang(fr) %{py_sitedir}/pida/services/manhole/locale/fr_FR/LC_MESSAGES/manhole.po
-%lang(fr) %{py_sitedir}/pida/services/notify/locale/fr_FR/LC_MESSAGES/notify.po
-%lang(fr) %{py_sitedir}/pida/services/openwith/locale/fr_FR/LC_MESSAGES/openwith.po
-%lang(fr) %{py_sitedir}/pida/services/optionsmanager/locale/fr_FR/LC_MESSAGES/optionsmanager.po
-%lang(fr) %{py_sitedir}/pida/services/plugins/locale/fr_FR/LC_MESSAGES/plugins.po
-%lang(fr) %{py_sitedir}/pida/services/project/locale/fr_FR/LC_MESSAGES/project.po
-%lang(fr) %{py_sitedir}/pida/services/sessions/locale/fr_FR/LC_MESSAGES/sessions.po
-%lang(fr) %{py_sitedir}/pida/services/shortcuts/locale/fr_FR/LC_MESSAGES/shortcuts.po
-%lang(fr) %{py_sitedir}/pida/services/versioncontrol/locale/fr_FR/LC_MESSAGES/versioncontrol.po
-%lang(fr) %{py_sitedir}/pida/services/webbrowser/locale/fr_FR/LC_MESSAGES/webbrowser.po
-%lang(fr) %{py_sitedir}/pida/services/window/locale/fr_FR/LC_MESSAGES/window.po
+%lang(fr) %{py_sitedir}/pida/resources/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/appcontroller/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/buffer/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/bugreport/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/commander/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/editor/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/filemanager/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/grepper/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/help/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/manhole/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/notify/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/openwith/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/optionsmanager/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/plugins/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/project/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/sessions/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/shortcuts/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/versioncontrol/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/webbrowser/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/window/locale/fr_FR
 
 %{py_sitedir}/*-py2.5.egg-info
+%dir %{py_sitedir}/pida
 %attr(755,root,root) %{py_sitedir}/moo_stub.so
 %{py_sitedir}/pida/*.py[co]
-
 %{py_sitedir}/pida/core
 %{py_sitedir}/pida/editors
 %dir %{py_sitedir}/pida/resources
