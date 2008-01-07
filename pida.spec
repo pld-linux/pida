@@ -10,7 +10,7 @@ Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.5.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
@@ -79,6 +79,26 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pida-remote
 
 # see todo at top of the spec
+%dir %{py_sitedir}/pida/resources/locale
+%dir %{py_sitedir}/pida/services/appcontroller/locale
+%dir %{py_sitedir}/pida/services/buffer/locale
+%dir %{py_sitedir}/pida/services/bugreport/locale
+%dir %{py_sitedir}/pida/services/commander/locale
+%dir %{py_sitedir}/pida/services/editor/locale
+%dir %{py_sitedir}/pida/services/filemanager/locale
+%dir %{py_sitedir}/pida/services/grepper/locale
+%dir %{py_sitedir}/pida/services/help/locale
+%dir %{py_sitedir}/pida/services/manhole/locale
+%dir %{py_sitedir}/pida/services/notify/locale
+%dir %{py_sitedir}/pida/services/openwith/locale
+%dir %{py_sitedir}/pida/services/optionsmanager/locale
+%dir %{py_sitedir}/pida/services/plugins/locale
+%dir %{py_sitedir}/pida/services/project/locale
+%dir %{py_sitedir}/pida/services/sessions/locale
+%dir %{py_sitedir}/pida/services/shortcuts/locale
+%dir %{py_sitedir}/pida/services/versioncontrol/locale
+%dir %{py_sitedir}/pida/services/webbrowser/locale
+%dir %{py_sitedir}/pida/services/window/locale
 %lang(fr) %{py_sitedir}/pida/resources/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/appcontroller/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/buffer/locale/fr_FR
