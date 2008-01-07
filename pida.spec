@@ -2,6 +2,7 @@
 # - investigate the documentation format in doc
 # - verify if such a big version jump actually works
 # - move .po files to glibc dir and test if it works
+#   are these used afterall, as they are .po sources not .mo compiled
 # - moo_stub is just sample? kill it and can make package noarch.
 #
 %define		realname PIDA
