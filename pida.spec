@@ -11,7 +11,7 @@ Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.5.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
@@ -140,8 +140,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/pida/services/buffer/glade
 %{py_sitedir}/pida/services/buffer/*.py[co]
 %{py_sitedir}/pida/services/buffer/service.pida
-%{py_sitedir}/pida/services/buffer/uidef/buffer-file-menu.xml
-%{py_sitedir}/pida/services/buffer/uidef/buffer.xml
+%{py_sitedir}/pida/services/buffer/uidef
 %dir %{py_sitedir}/pida/services/bugreport
 %{py_sitedir}/pida/services/bugreport/glade
 %{py_sitedir}/pida/services/bugreport/*.py[co]
