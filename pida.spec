@@ -121,7 +121,12 @@ rm -rf $RPM_BUILD_ROOT
 %lang(fr) %{py_sitedir}/pida/services/webbrowser/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/window/locale/fr_FR
 
-%{py_sitedir}/*-py2.5.egg-info
+%if "%{py_ver}" > "2.4"
+%{py_sitedir}/*-*.egg-info
+%{py_sitedir}/*-*.egg-info
+%{py_sitedir}/*-py2.4.egg-info
+
+%endif
 %dir %{py_sitedir}/pida
 %attr(755,root,root) %{py_sitedir}/moo_stub.so
 %{py_sitedir}/pida/*.py[co]
