@@ -11,7 +11,7 @@ Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
 Version:	0.5.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
