@@ -83,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 # see todo at top of the spec
 %dir %{py_sitedir}/pida/resources/locale
 %dir %{py_sitedir}/pida/services/appcontroller/locale
+%dir %{py_sitedir}/pida/services/browseweb/locale
 %dir %{py_sitedir}/pida/services/buffer/locale
 %dir %{py_sitedir}/pida/services/bugreport/locale
 %dir %{py_sitedir}/pida/services/commander/locale
@@ -102,6 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/pida/services/window/locale
 %lang(fr) %{py_sitedir}/pida/resources/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/appcontroller/locale/fr_FR
+%lang(fr) %{py_sitedir}/pida/services/browseweb/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/buffer/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/bugreport/locale/fr_FR
 %lang(fr) %{py_sitedir}/pida/services/commander/locale/fr_FR
@@ -139,10 +141,16 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/pida/resources/data
 %dir %{py_sitedir}/pida/resources/data/gtkrc-2.0
 %{py_sitedir}/pida/resources/data/*.py[co]
+%{py_sitedir}/pida/resources/data/*.vim
+%{py_sitedir}/pida/resources/data/*.el
 %dir %{py_sitedir}/pida/services
 %dir %{py_sitedir}/pida/services/appcontroller
 %{py_sitedir}/pida/services/appcontroller/*.py[co]
 %{py_sitedir}/pida/services/appcontroller/uidef
+%dir %{py_sitedir}/pida/services/browseweb
+#%%{py_sitedir}/pida/services/browseweb/glade
+%{py_sitedir}/pida/services/browseweb/*.py[co]
+%{py_sitedir}/pida/services/browseweb/uidef
 %dir %{py_sitedir}/pida/services/buffer
 %{py_sitedir}/pida/services/buffer/glade
 %{py_sitedir}/pida/services/buffer/*.py[co]
@@ -153,6 +161,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/pida/services/bugreport/uidef
 %dir %{py_sitedir}/pida/services/commander
 %{py_sitedir}/pida/services/commander/*.py[co]
+%{py_sitedir}/pida/services/commander/pixmaps
 %{py_sitedir}/pida/services/commander/uidef
 %dir %{py_sitedir}/pida/services/contexts
 %{py_sitedir}/pida/services/contexts/*.py[co]
@@ -171,6 +180,11 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/pida/services/help
 %{py_sitedir}/pida/services/help/*.py[co]
 %{py_sitedir}/pida/services/help/uidef
+%dir %{py_sitedir}/pida/services/language
+%{py_sitedir}/pida/services/language/glade
+%{py_sitedir}/pida/services/language/*.py[co]
+%{py_sitedir}/pida/services/language/pixmaps
+%{py_sitedir}/pida/services/language/uidef
 %dir %{py_sitedir}/pida/services/manhole
 %{py_sitedir}/pida/services/manhole/*.py[co]
 %{py_sitedir}/pida/services/manhole/uidef
@@ -180,6 +194,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/pida/services/openwith
 %{py_sitedir}/pida/services/openwith/glade
 %{py_sitedir}/pida/services/openwith/*.py[co]
+%{py_sitedir}/pida/services/openwith/uidef
 %dir %{py_sitedir}/pida/services/optionsmanager
 %{py_sitedir}/pida/services/optionsmanager/glade
 %{py_sitedir}/pida/services/optionsmanager/*.py[co]
@@ -194,6 +209,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/pida/services/project/uidef
 %{py_sitedir}/pida/services/*.py[co]
 %dir %{py_sitedir}/pida/services/sessions
+%{py_sitedir}/pida/services/sessions/glade
 %{py_sitedir}/pida/services/sessions/*.py[co]
 %{py_sitedir}/pida/services/sessions/uidef
 %dir %{py_sitedir}/pida/services/shortcuts
@@ -207,6 +223,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/pida/services/versioncontrol/uidef
 %dir %{py_sitedir}/pida/services/window
 %{py_sitedir}/pida/services/window/*.py[co]
+%{py_sitedir}/pida/services/window/uidef
 %{py_sitedir}/pida/ui
 %{py_sitedir}/pida/utils
 
