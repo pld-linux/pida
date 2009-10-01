@@ -22,6 +22,7 @@ BuildRequires:	python-devel
 BuildRequires:	python-pygtk-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
+Requires:	fontconfig
 Requires:	python-gnome-desktop-gtksourceview
 Requires:	python-gnome-gconf
 Requires:	python-kiwi
