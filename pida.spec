@@ -17,7 +17,7 @@ Group:		Development/Tools
 Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
 # Source0-md5:	d24bbdc2c07172062cf55dffe58c85f6
 Source1:	%{name}.desktop
-URL:		http://pida.berlios.de/
+URL:		http://pida.co.uk/
 BuildRequires:	python-devel
 BuildRequires:	python-pygtk-devel
 BuildRequires:	python-setuptools
@@ -25,6 +25,7 @@ BuildRequires:	rpm-pythonprov
 Requires:	python-gnome-desktop-gtksourceview
 Requires:	python-gnome-gconf
 Requires:	python-kiwi
+Requires:	python-pygtk-glade
 Requires:	python-vte
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
