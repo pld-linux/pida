@@ -18,6 +18,7 @@ Source0:	http://pida.googlecode.com/files/%{realname}-%{version}.tar.gz
 # Source0-md5:	d24bbdc2c07172062cf55dffe58c85f6
 Source1:	%{name}.desktop
 URL:		http://pida.co.uk/
+BuildRequires:	pkgconfig
 BuildRequires:	python-devel
 BuildRequires:	python-pygtk-devel
 BuildRequires:	python-setuptools
@@ -123,13 +124,11 @@ rm -rf $RPM_BUILD_ROOT
 %lang(fr) %{py_sitedir}/pida/services/window/locale/fr_FR
 
 %if "%{py_ver}" > "2.4"
-%{py_sitedir}/*-*.egg-info
-%{py_sitedir}/*-*.egg-info
-%{py_sitedir}/*-py2.*.egg-info
+%{py_sitedir}/PIDA-*-py2.*.egg-info
 %endif
+%attr(755,root,root) %{py_sitedir}/moo_stub.so
 
 %dir %{py_sitedir}/pida
-%attr(755,root,root) %{py_sitedir}/moo_stub.so
 %{py_sitedir}/pida/*.py[co]
 %{py_sitedir}/pida/core
 %{py_sitedir}/pida/editors
