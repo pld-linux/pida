@@ -22,6 +22,7 @@ BuildRequires:	python-pygtk-devel
 BuildRequires:	python-pygtk-glade
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	fontconfig
 Requires:	python-gnome-desktop-gtksourceview
 Requires:	python-gnome-gconf
