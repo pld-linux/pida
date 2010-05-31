@@ -4,6 +4,7 @@
 # - move .po files to glibc dir and test if it works
 #   are these used afterall, as they are .po sources not .mo compiled
 # - moo_stub is just sample? kill it and can make package noarch.
+# - pida probably needs some .py files o run properly
 #
 Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
