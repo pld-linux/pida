@@ -9,12 +9,12 @@
 Summary:	A framework for integrated development
 Summary(pl.UTF-8):	Szkielet do programowania zintegrowanego
 Name:		pida
-Version:	0.6.1
+Version:	0.6.2
 Release:	0.1
 License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://pypi.python.org/packages/source/p/pida/%{name}-%{version}.tar.gz
-# Source0-md5:	ca509c6140b826eacfe87ceb12034abc
+# Source0-md5:	6ee61497996abd54f8a9dacd39b90c8c
 Source1:	%{name}.desktop
 URL:		http://pida.co.uk/
 BuildRequires:	pkgconfig
@@ -82,6 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README
 %attr(755,root,root) %{_bindir}/pida
+%attr(755,root,root) %{_bindir}/pida-build
 %attr(755,root,root) %{_bindir}/pida-remote
 
 # see todo at top of the spec
@@ -138,12 +139,12 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/pida/plugins
 %dir %{py_sitedir}/pida/plugins/*.py[co]
 %dir %{py_sitedir}/pida/resources
-%{py_sitedir}/pida/resources/glade
+#%%{py_sitedir}/pida/resources/glade
 %{py_sitedir}/pida/resources/pixmaps
 %{py_sitedir}/pida/resources/uidef
 %dir %{py_sitedir}/pida/resources/data
 %dir %{py_sitedir}/pida/resources/data/gtkrc-2.0
-%{py_sitedir}/pida/resources/data/*.py[co]
+#%%{py_sitedir}/pida/resources/data/*.py[co]
 %{py_sitedir}/pida/resources/data/*.vim
 %{py_sitedir}/pida/resources/data/*.el
 %dir %{py_sitedir}/pida/services
@@ -158,10 +159,10 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/pida/services/buffer/glade
 %{py_sitedir}/pida/services/buffer/*.py[co]
 %{py_sitedir}/pida/services/buffer/uidef
-%dir %{py_sitedir}/pida/services/bugreport
-%{py_sitedir}/pida/services/bugreport/glade
-%{py_sitedir}/pida/services/bugreport/*.py[co]
-%{py_sitedir}/pida/services/bugreport/uidef
+#%%dir %{py_sitedir}/pida/services/bugreport
+#%%{py_sitedir}/pida/services/bugreport/glade
+#%%{py_sitedir}/pida/services/bugreport/*.py[co]
+#%%{py_sitedir}/pida/services/bugreport/uidef
 %dir %{py_sitedir}/pida/services/commander
 %{py_sitedir}/pida/services/commander/*.py[co]
 %{py_sitedir}/pida/services/commander/pixmaps
