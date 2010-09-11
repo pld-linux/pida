@@ -25,6 +25,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	fontconfig
+Requires:	python-argparse
 Requires:	python-gnome-desktop-gtksourceview
 Requires:	python-gnome-gconf
 Requires:	python-kiwi
@@ -73,7 +74,7 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 cp $RPM_BUILD_ROOT%{py_sitedir}/%{name}/resources/pixmaps/pida-icon.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
-%py_postclean
+#%%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
